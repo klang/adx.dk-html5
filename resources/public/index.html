@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5</title>
+<!-- GEOLOCATION -->
+
+
+<!-- CSS -->
+<style type="text/css">
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color: #666;
+}
+body {
+	background-color: #FFF;
+	background:url(images/orange.jpg);
+}
+a:link {
+	color: #fff;
+	font-weight:bold;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #fff;
+	font-weight:bold;
+}
+a:hover {
+	text-decoration: none;
+	color: #000;
+	font-weight:bold;
+}
+a:active {
+	text-decoration: none;
+	color: #000;
+	font-weight:bold;
+}
+p {
+	line-height:14px;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 80px;
+	margin:10px;
+}
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	margin-top:-8px;
+}
+h6 {
+	font-size:9px;
+	margin:10px;
+}
+/* Header */
+header {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:150px;
+	color:#FFF;
+	z-index:1;
+}
+
+/* Navigation */
+nav {
+	position:fixed;
+	top:180px;
+	left:10px;
+	width:100px;
+	height:220px;
+	padding:10px;
+	color:#FFF;
+	z-index:200;
+}
+
+
+/* Sektion */
+section {
+	position:absolute;
+	top:180px;
+	left:200px;
+	width:700px;
+	padding:10px;
+	margin-bottom:100px;
+	color:#FFF;
+	z-index:4;
+}
+
+header, nav, section {
+	background:#006699;
+}
+
+
+/* Sidedimser */
+aside {
+	position:absolute;
+	width:270px;
+	padding:10px;
+	color:#000;
+	z-index:3;
+}
+#aside1 {
+	top:190px;
+	right:30px;
+	background-color:#c8c8c8;
+}
+#aside2 {
+	top:380px;
+	right:20px;
+	background-color:#c8c8c8;	
+}
+
+/* Footer */
+footer {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	background-color:#000;
+	color:#FFF;
+	z-index:5;
+}
+
+/* Logo i toppen */
+#logo {
+	position:absolute;
+	right:50px;
+	top:15px;
+	width:100px;
+	height:100px;
+	z-index:1000;
+	background-image:url(images/logo.png);
+}
+#art2 {
+	font-style:italic;
+}
+
+#outerspace {
+    position: relative;
+    height:400px;
+	width:700px;
+	margin-bottom:25px;
+	margin-top:25px;
+    background: #000 url(images/outerspace.jpg);
+	overflow:hidden;
+	border:#000033;
+	border-width:10px;
+}
+div.rocket {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+div.rocket img {
+
+}
+#outerspace:hover div.rocket {
+
+}
+
+#outerspace:hover div.rocket img {
+
+}
+</style>
+
+</head>
+
+<body>
+<a id="top"></a>
+<!-- Header: start -->
+<header>
+<h1>HTML5</h1>
+</header>
+<!-- Header: slut -->
+
+<!-- Navigation: start -->
+<nav>
+<h2>Menu</h2>
+<p><a href="#top">Top</a></p>
+<p><a href="#animation">Animation</a></p>
+<p><a href="#medier">Medier</a></p>
+<p><a href="#canvas">Canvas</a></p>
+<p><a href="#geolocation">GeoLocation</a></p>
+<p><a href="#formular">Formular</a></p>
+<p><a href="#svg">SVG</a></p>
+<p>&nbsp;</p>
+</nav>
+<!-- Navigation: slut -->
+
+<!-- Sektion: start -->
+<section>
+<h2>New English</h2>
+
+<!-- Artikel 1: start -->
+<article id="art1">
+<p>The European Commission has just announced an agreement whereby English will be the official language of the EU (European Union) rather than German which was the other possibility.  As part of the negotiations, Her Majesty's Government conceded that English spelling had some room for improvement and has accepted a 5 year phase-in plan that would be known as &quot;Euro-English&quot;.</p>
+<p>In the first year, &quot;s&quot; will replace the soft &quot;c&quot;.  Sertainly, this will make the sivil servants jump with joy. The hard &quot;c&quot; will be dropped in favour of the&quot;k&quot;. This should klear up konfusion and keyboards kan have one less letter.</p>
+<p>There will be growing publik enthusiasm in the sekond year, when the troublesome &quot;ph&quot; will be replaced with &quot;f&quot;. This will make words like &quot;fotograf&quot; 20% shorter.</p>
+<p>In the 3rd year, publik akseptanse of the new spelling kan be ekspekted to reach the stage where more komplikated changes are possible.  Governments will enkorage the removal of double letters, which have always ben a deterent to akurate speling. Also, al wil agre that the horible mes of the silent &quot;e&quot;s in the language is disgraseful, and they should go away.</p>
+<p>By the fourth year, peopl wil be reseptiv to steps such as replasing &quot;th&quot; with &quot;z&quot; and &quot;w&quot; with &quot;v&quot;.  During ze fifz year, ze unesesary &quot;o&quot; kan be dropd from vords kontaining &quot;ou&quot; and similar changes vud of kors be aplid to ozer kombinations of leters.</p>
+<p>After zis fifz yer, ve vil hav a reli sensibl riten styl. Zer vil be no mor trubl or difikultis and evrivun vil find it ezi to understand ech ozer.  Ze drem vil finali kum tru!  And zen ve vil tak over ze world!</p>
+</article>
+<!-- Artikel 1: slut -->
+
+<!-- Artikel 2: start -->
+<article id="art2">
+<h2>Speaking of Spelling</h2>
+<p>Aoccdrnig to a rscheearch at an Elingsh uinervtisy, it deosn't mttaer in waht oredr the ltteers in a wrod are, the olny iprmoetnt tihng is taht frist and lsat ltteer is at the rghit pclae. The rset can be a toatl mses and you can sitll raed it wouthit porbelm. Tihs is bcuseae we do not raed ervey lteter by itslef but the wrod as a wlohe.</p>
+</article>
+<!-- Artikel 2: slut -->
+
+<a id="animation"></a>
+<h2>Animation</h2>
+<div id="outerspace">
+<div class="rocket"><img src="images/lunar.png"></div>
+</div>
+
+<!-- Artikel 3: start -->
+<article id="art3">
+<h2>Pidgin</h2>
+<p><img src="images/txtlogo.png" alt="HTML5 logo" align="right" class="twist">Sampela manmeri ikam long Niugini Ailan long nambawan taim long faivpela ten tausen yia i go pinis. Ol pipol bilong Hailans i wokim gaden long nain tausen yia i go pinis - emi klostu nambawan taim long wol long wokim gaden. Olsem fopela tausen yia i go pinis, ol lain oli kolim Ostronisien i kamap long Papua Niugini, na oli bringim ol pik, pasin bilong hukim pis, pasin bilong wokim pot, na ol nupela tokples i kam. </p>
+<p>Olsem tri handet yia i go pinis, kaukau i kam long Saut Amerika. Kaukau i winim taro long karim planti kaikai, na nau namba bilong ol manmeri i go antap long Hailans na sampela ol narapela hap. Dispela nem "Papua Niugini" i kamap long tok "Papua", hap tok bilong Malesia long kain gras bilong ol manmeri bilong Melanesia, na tok "Niu Gini", i kam long wanpela man bilong Spen, Yaigo Ortiz de Retez, husait i tingim lukluk bilong ol manmeri bilong Niugini i wankain ol manmeri bilong hap Gini long Afrika. </p>
+<p>Long yia 1883, kantri Briten i kam long Sauten Rijen na tokaut olsem emi giraun bilong ol nau. Ol i kirapim gavman bilong dispela hap na givim nem "British New Guinea", o "Niugini bilong Briten". Kapitol bilong dispela gavman emi Pot Mosbi. </p>
+<p>Long yia 1884, kantri Jemani i kam long Ailans Rijen na Momase Rijen na tokaut olsem emi giraun bilong ol nau. Ol i no kirapim gavman tru pastaim, tasol oli tokim Kampani bilong Niugini (Tok Siaman: Neuguinea-Kompanie) long bosim dispela giraun. Nambawan taun bilong dispela kampani oli kolim HerbertshÃ¶he long Tok Siaman. Nau yumi save long dispela taun long nem Kokopo. Long yia 1899, gavman bilong Jemani i tokim kampani olsem i mas pinis long bosim giraun, na gavman i kirapim ofis bilong gavman long bosim Niugini bilong Jemani. Taim wo i stat long 1915, ami bilong Ostrelia i rausim gavman bilong Jemani na bosim tupela giraun: "Papua" (Sauten Rijen) na "New Guinea" (Ailans Rijen na Momase Rijen). Wo i pinis long 1918, na bihain Ostrelia i kisim tokorait long Lig bilong ol Kantri (Tok Inglis: League of Nations) long bosim tupela giraun. Wo i kamap gen long 1941, taim ami bilong Siapan i kam na holim planti hap long Niugini olsem Niu Ailan, Manus, Niu Briten, Bogenvil, Momase Rijen na tu Oro na Milen Be. Planti pait i kamap long kainkain hap long kantri long dispela taim. Dispela wo i pinis long 1945. Bihain long wo, Papua na Niugini i pas wantaim olsem wanpela giraun, wantaim nem Papua na Niugini, na Ostrelia i lukautim. Haus bilong Asembli, olsem Palamen, i stat long 1964.</p>
+<p> Long 1972 nupela ileksen i kamap long Palamen tru, na ol memba i makim Michael Somare olsem nambawan Praim Minista bilong kantri. Long dispela taim, nem bilong kantri i senis i go long Papua Niugini. Long yia 1975, long 16 Septemba, Papua Niugini i kisim independens long Ostrelia, na em i sanap olsem wanpela kantri em yet nau. Michael Somare bilong Pangu Pati i stap olsem Praim Minista inap long yia 1980, na long dispela taim Palamen i vot long rausim em na Julius Chan i kisim nambawan sia nau. </p>
+<p>Long yia 1982, Michael Somare i winim vot na sanap olsem Praim Minista gen, tasol Palamen i rausim em long 1985 na givim dispela posisen i go long Paias Wingti. Wingti i stap yet olsem Praim Minista bihain long ol ileksen bilong yia 1987, tasol Palamen i rausim em long 1988 na makim Rabbie Namaliu. Traipela pait long Bogenvil i stat long yia 1988 i go long yia 1997. Klostu tupela ten tausen manmeri i dai pinis long dispela pait. </p>
+<p>Long yia 1992, Sir Julius Chan i kisim pawa gen, inap long 1997, taim emi risain bihain long traubel wantaim Sandlain long Bogenvil. Palamen i makim Bill Skate olsem Praim Minista long dispela taim. Long 1999, oli rausim em gen, na Sir Mekere Morauta emi sanap olsem nupela Praim Minista bilong kantri. Long ileksen bilong yia 2002, nupela pati bilong Sir Michael Somare, Nesenel Alains, i wokim nupela gavman, na long nambawan taim long kantri, dispela gavman istap long faivpela yia inap long ol ileksen long yia 2007. Long nesenel ileksen bilong yia 2007, Nesenel Alains i winim ol narapela pati na kirapim nupela gavman gen.</p>
+<p>&nbsp;</p>
+</article>
+<!-- Artikel 3: slut -->
+
+<!-- Medier: start -->
+<a id="medier"></a>
+<h2>Medier</h2>
+<!-- Her skal sættes musik ind -->
+<p>&nbsp;</p>
+<!-- Her skal sættes video ind -->
+<p>&nbsp;</p>
+<!-- Medier: slut -->
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<!-- iframe til canvas: start -->
+<a id="canvas"></a>
+<h2>Canvas</h2>
+<p>Vi ser her to interaktive eksempler på brugen af Canvas i en iframe, og ét i et nyt vindue.</p>
+<p><a href="canvas/skitse.html" target="iframe">Skitse</a>&nbsp;|&nbsp;<a href="canvas/color.html" target="iframe">Farvelæg</a>&nbsp;|&nbsp;<a href="http://mugtug.com/sketchpad/" target="_blank">Helt tegneprogram</a></p>
+<iframe src="canvas/skitse.html" width="490" height="350" scrolling="no" marginheight="0" marginwidth="0" name="iframe" frameborder="0"></iframe>
+<p>&nbsp;</p>
+<!-- iframe til canvas: slut -->
+
+<!-- Geolocation: start -->
+<a id="geolocation"></a>
+<h2>GeoLocation</h2>
+<div>  
+      <button id="btnInit" >Find mig!</button>  
+  
+      <button id="btnStop" >Stop positionering</button>  
+  </div>
+<p>&nbsp;</p>
+<!-- Geolocation: slut -->
+
+<!-- Formular: start -->
+<p>&nbsp;</p>
+<a id="formular"></a>
+<h2>Formular</h2>
+<form action="xxx.asp">
+  Fornavn:    <input type="text" name="fnavn">&nbsp;
+  Efternavn:  <input type="text" name="enavn"><br>
+  E-mail:     <input type="text" name="email">&nbsp;
+  Antal kager:<input type="text" name="kager"><br>
+  <input type="submit" />
+</form>
+<p>&nbsp;</p>
+<!-- Formular: slut -->
+
+<!-- SVG: start -->
+<p>&nbsp;</p>
+<a id="svg"></a>
+<h2>SVG</h2>
+<img src="images/HTML5_Badge.png">
+<!-- SVG: slut -->
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</section>
+<!-- Sektion: slut -->
+
+<!-- Sidedims1: start -->
+<aside id="aside1">
+<h2>HTML5</h2>
+<p>Fremtiden i din browser</p>
+</aside>
+<!-- Sidedims1: slut -->
+
+<!-- Sidedims2: start -->
+<aside id="aside2" >
+<h2>CSS3</h2>
+<p>Denne side er udfærdiget i HTML5 og CSS3</p>
+</aside>
+<!-- Sidedims2: slut -->
+
+<!-- Logo i toppen: start -->
+<div id="logo"></div>
+<!-- Logo i toppen: slut -->
+
+<!-- Footer: start -->
+<footer>
+<h6>Copyright 2012 © MicroWorld A/S</h6>
+</footer>
+<!-- Footer: slut -->
+
+<!-- !!!Bis zum bitteren ende!!! Code by Hasse Sørensen/Nordisk Grafik // Get smart: adx.dk/html5 -->
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas Paint - Example 5</title>
+    <style type="text/css"><!--
+      #container { position: relative; }
+      #imageView { border: 1px solid #000; }
+      #imageTemp { position: absolute; top: 1px; left: 1px; }
+    -->
+    body {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:12px;
+		color: #666;
+		background:#FFFFFF;
+	}
+    </style>
+  </head>
+  <body>
+    <p><label>Værktøj: <select id="dtool">
+        <option value="line">Streg</option>
+        <option value="rect">Firkant</option>
+        <option value="pencil">Blyant</option>
+    </select></label></p>
+
+    <div id="container">
+      <canvas id="imageView" width="490" height="300"></canvas>
+    </div>
+
+    <script type="text/javascript" src="drawingtools.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+    <script>  
+  
+        jQuery(window).ready(function(){  // knappernes funktion
+            jQuery("#btnInit").click(initiate_watchlocation);  
+            jQuery("#btnStop").click(stop_watchlocation);  
+        });  
+  
+        var watchProcess = null;  
+  
+        function initiate_watchlocation() {  
+    if (watchProcess == null) {  
+        watchProcess = navigator.geolocation.watchPosition(handle_geolocation_query, handle_errors);  
+    }  
+}  
+  
+        function stop_watchlocation() {  
+    if (watchProcess != null)  
+    {  
+        navigator.geolocation.clearWatch(watchProcess);  
+        watchProcess = null;  
+    }  
+} 
+  
+        function handle_errors(error)  // Håndtér fejl, fx slukket GPS
+        {  
+            switch(error.code)  
+            {  
+                case error.PERMISSION_DENIED: alert("Dine placeringstjenester er slået fra (GPS og/eller netværksplacering)");  
+                break;  
+  
+                case error.POSITION_UNAVAILABLE: alert("Kunne ikke finde nuværende position. Måske er du indendørs?");  
+                break;  
+  
+                case error.TIMEOUT: alert("Timeout i positionsfunktion");  
+                break;  
+  
+                default: alert("Ukendt fejl");  
+                break;  
+            }  
+        }  
+  
+        function handle_geolocation_query(position) {  // Find længde- og breddegrad, hent Google Maps og vis placering dér
+    var text = "Latitude: "  + position.coords.latitude  + "<br/>" +  
+               "Longitude: " + position.coords.longitude + "<br/>" +  
+               "Accuracy: "  + position.coords.accuracy  + "m<br/>" +  
+               "Time: " + new Date(position.timestamp);  
+    jQuery("#info").html(text);  
+  
+    var image_url = "http://maps.google.com/maps/api/staticmap?sensor=false&center=" + position.coords.latitude + ',' + position.coords.longitude +  
+                    "&zoom=14&size=300x400&markers=color:blue|label:S|" + position.coords.latitude + ',' + position.coords.longitude;  
+  
+    jQuery("#map").remove();  
+    jQuery(document.body).append(  
+        jQuery(document.createElement("img")).attr("src", image_url).attr('id','map')  
+    );  
+}  
+    </script>

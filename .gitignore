@@ -1,0 +1,12 @@
+pom.xml
+*jar
+/lib/
+/classes/
+/target/
+.lein-deps-sum
+.cake
+*~
+*.flv
+*.mp3
+*.mp4
+*.ogg
