@@ -1,4 +1,4 @@
-(ns my-website.views.common
+(ns html5-examples.views.common
   (:use [noir.core :only [defpartial]]
         [hiccup.page :only [include-css html5]]))
 
