@@ -1,5 +1,6 @@
 (ns html5-examples.server
-  (:require [noir.server :as server]))
+  (:require [noir.server :as server])
+  (:gen-class {:main true}))
 
 (server/load-views-ns 'html5-examples.views)
 
